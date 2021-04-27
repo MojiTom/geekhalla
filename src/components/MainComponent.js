@@ -7,6 +7,8 @@ import Reservations from './ReservationComponent';
 import Choices from './MenuComponent' // React has other uses for "menu" so - Choices.
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 
+// This component sets up navigation.
+
 class Main extends Component {
 
   render() {

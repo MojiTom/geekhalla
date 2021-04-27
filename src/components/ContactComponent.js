@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { Breadcrumb, BreadcrumbItem,
     Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-// Need to import form stuff to replace react-redux form stuff
 
-// Validation in Redux
+// Validation in Redux or React? - I left this in case it's useful. - TH
 const required = val => val && val.length; // Makes sure there IS a val, and that .length > 0
 const maxLength = len => val => !val || (val.length <= len); // function in a function 
 const minLength = len => val => val && (val.length >= len); // 
