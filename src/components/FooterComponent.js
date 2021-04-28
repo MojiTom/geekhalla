@@ -27,6 +27,10 @@ function Footer(props) {
                 <a>
                   <Link to='/contactus'>Contact Us</Link>
                 </a>
+                <br />
+                <a>
+                  <Link to='/reservations'>Reservations</Link>
+                </a>
               </ul>
             </div>
             <div className='col-sm-4 text-right offset-4'>

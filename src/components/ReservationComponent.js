@@ -1,7 +1,12 @@
 import React, { Component }  from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
-/* This is from ContactComponent. I plan to edit it for the reservation form.
+/* This was originally from ContactComponent. I plan to edit it for the reservation form.
+
+/* 4/27/21 -- Starting on the Reservations form.
 
 // Validation in Redux or React? - I left this in case it's useful. - TH
 const required = val => val && val.length; // Makes sure there IS a val, and that .length > 0
@@ -10,7 +15,9 @@ const minLength = len => val => val && (val.length >= len); //
 const isNumber = val => !isNaN(+val); // +val changes string to number
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
-class Contact extends Component {
+*/
+
+class Reservation extends Component {
     constructor(props) {
         super(props);
 
@@ -21,13 +28,14 @@ class Contact extends Component {
             email: '',
             agree: false,
             contactType: 'By Phone',
-            feedback: ''
+            reservation: ''
         };
 
-        this.handleInputChange = this.handleInputChange.bind(this);
+        // this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+/* Commenting out validation until I get the form working.
 
     validate(firstName, lastName, phoneNum, email) {
 
@@ -75,6 +83,7 @@ class Contact extends Component {
             [name]: value
         });
     }
+*/
 
     handleSubmit(event) {
         console.log('Current state is: ' + JSON.stringify(this.state));
@@ -90,30 +99,16 @@ class Contact extends Component {
                     <div className="col">
                         <Breadcrumb>
                             <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                            <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+                            <BreadcrumbItem active>Reservation</BreadcrumbItem>
                         </Breadcrumb>
-                        <h2>Contact Us</h2>
+                        <h2>Reservations</h2>
                         <hr />
                     </div>
                 </div>
 
-                <div className="row row-content align-items-center">
-                    <div className="col-sm-4">
-                        <h5>Our Address</h5>
-                        <address>
-                            1 Nucamp Way<br />
-                            Seattle, WA 98001<br />
-                            U.S.A.
-                        </address>
-                    </div>
-                    <div className="col">
-                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> campsites@nucamp.co</a>
-                    </div>
-                </div>
                 <div className="row row-content">
                     <div className="col-12">
-                        <h2>Send us your Feedback</h2>
+                        <h2>Make a Reservation</h2>
                         <hr />
                     </div>
                     <div className="col-md-10">
@@ -175,19 +170,20 @@ class Contact extends Component {
                                     </Input>
                                 </Col>
                             </FormGroup>
+
                             <FormGroup row>
-                                <Label htmlFor="feedback" md={2}>Your Feedback</Label>
+                                <Label htmlFor="reservation" md={2}>Date and Time</Label>
                                 <Col md={10}>
-                                    <Input type="textarea" id="feedback" name="feedback"
-                                        rows="12"
-                                        value={this.state.feedback}
+                                    <Input type="text" id="reservation" name="reservation"
+                                        value={this.state.reservation}
                                         onChange={this.handleInputChange}></Input>
                                 </Col>
                             </FormGroup>
+
                             <FormGroup row>
                                 <Col md={{size: 10, offset: 2}}>
                                     <Button type="submit" color="primary">
-                                        Send Feedback
+                                        Reserve
                                     </Button>
                                 </Col>
                             </FormGroup>
@@ -198,10 +194,9 @@ class Contact extends Component {
         );
     }
 }
-*/
 
-// The following component is just a placeholder, but it keeps everything working until
-// it's replaced by functional code. - TH
+/* The following component is just a placeholder, but it keeps everything working until
+it's replaced by functional code. - TH
 
 class Reservation extends Component {
 
@@ -213,5 +208,6 @@ class Reservation extends Component {
         );
     }
 }
+*/
 
 export default Reservation;
