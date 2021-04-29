@@ -16,10 +16,6 @@ function Footer(props) {
                 </a>{' '}
                 <br />
                 <a>
-                  <Link to='#'>Events</Link>
-                </a>{' '}
-                <br />
-                <a>
                   <Link to='/contactus'>Contact Us</Link>
                 </a>
                 <br />
