@@ -97,20 +97,12 @@ class Reservation extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <Breadcrumb>
-                            <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                            <BreadcrumbItem active>Reservation</BreadcrumbItem>
-                        </Breadcrumb>
                         <h2>Reservations</h2>
                         <hr />
                     </div>
                 </div>
 
                 <div className="row row-content">
-                    <div className="col-12">
-                        <h2>Make a Reservation</h2>
-                        <hr />
-                    </div>
                     <div className="col-md-10">
                         <Form onSubmit={this.handleSubmit}>
                             <FormGroup row>
