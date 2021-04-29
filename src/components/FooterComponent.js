@@ -20,11 +20,6 @@ function Footer(props) {
                 </a>{' '}
                 <br />
                 <a>
-                    <a><Link to='#'>Blog</Link></a> <br/>
-                  <Link to='/aboutus'>About</Link>
-                </a>{' '}
-                <br />
-                <a>
                   <Link to='/contactus'>Contact Us</Link>
                 </a>
                 <br />
