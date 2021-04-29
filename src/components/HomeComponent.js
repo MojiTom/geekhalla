@@ -25,7 +25,7 @@ function Home(props) {
         </video>
       </div>
       <div className="row">
-        <div className="col-md m-1">
+        <div className="col-md m-5">
           <h1 class="welcomeFont">BYTES. BREWS. GAMES.</h1>
         </div>
       </div>
