@@ -61,8 +61,8 @@ class Header extends Component {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="nav-link" to="#">
-                      <i className="fa fa-list fa-lg" /> ORDER ONLINE
+                    <NavLink className="nav-link" to="/reservations">
+                      <i className="fa fa-list fa-lg" /> RESERVATIONS
                     </NavLink>
                   </NavItem>
                   <NavItem>
