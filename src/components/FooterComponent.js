@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 function Footer(props) {
     return (
       <footer className='site-footer'>
+      <p>This is a conflict</p>
         <div className='container'>
           <div className='row'>
             <div className='links' className='col-4 col-sm-2 offset-1'>
