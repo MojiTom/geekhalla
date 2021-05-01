@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.welcomeFont {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.welcomeFont2 {
+  color: pink;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.homeImg {
+  border-radius: 100%;
+  width: 30%;
+}
+
+.card-text {
+  font-family: "Roboto", sans-serif;
+}
+
+.homeBackground {
+  background: rgb(253, 168, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(253, 168, 255, 1) 0%,
+    rgba(99, 229, 255, 1) 100%
+  );
+}

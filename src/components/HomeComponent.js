@@ -29,13 +29,17 @@ function Home(props) {
           <h1 class="welcomeFont">BYTES. BREWS. GAMES.</h1>
         </div>
       </div>
-      <div className="row">
+      <div className="row homeBackground ">
         <div className="col">
           <Card>
             <CardBody>
               <CardText>
-                Nerdvana does not accept reservations or call ahead seating. We
-                seat on a first come, first served basis. Game on!
+                <strong>
+                  Nerdvana does not accept reservations or call ahead seating.
+                  We seat on a first come, first served basis.
+                </strong>
+                <br />
+                Game on!
               </CardText>
               <CardImg
                 src="https://nerdvanafrisco.com/wp-content/uploads/2020/06/Booth-gaming-2-2048x1365.jpg"
@@ -46,18 +50,29 @@ function Home(props) {
         </div>
         <div className="col">
           <Card>
-            About @nerdvana.frisco The Ultimate Upscale Nerd Culture Experience.
-            A chic gaming-themed restaurant & coffee bar that features custom
-            cocktails & scratch kitchen all under one roof! Unique food &
-            libations, locally roasted coffee & much more… Enjoy one of our
-            handcrafted dishes while watching the latest e-sports tournament.
-            Have a local craft beer while slashing through mobs at our free play
-            setups or enjoy some 2 player co-op in our cockpit booths! Tabletop
-            gamers rejoice, we have a huge selection of the best board games for
-            you to enjoy! Don’t forget to get a custom image printed on your a
-            latte or beer with our special drink printing machine! Nerdvana
-            Frisco is the place to enjoy nerd passion!
+            <CardText>
+              <strong>About @geekhalla.frisco</strong> The Ultimate Upscale Nerd
+              Culture Experience. A chic gaming-themed restaurant & coffee bar
+              that features custom cocktails & scratch kitchen all under one
+              roof! Unique food & libations, locally roasted coffee & much more…
+              Enjoy one of our handcrafted dishes while watching the latest
+              e-sports tournament. Have a local craft beer while slashing
+              through mobs at our free play setups or enjoy some 2 player co-op
+              in our cockpit booths! Tabletop gamers rejoice, we have a huge
+              selection of the best board games for you to enjoy! Don’t forget
+              to get a custom image printed on your a latte or beer with our
+              special drink printing machine! Nerdvana Frisco is the place to
+              enjoy nerd passion!
+            </CardText>
           </Card>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col welcomeFont2" >
+          Text
+        </div>
+        <div className="col">
+          Text
         </div>
       </div>
       <div className="row">
